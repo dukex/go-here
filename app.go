@@ -7,11 +7,12 @@ import (
 )
 
 func main() {
-	wd, err := os.Getwd()
+	here, err := os.Getwd()
 	if err != nil {
-		panic(fmt.Sprintf("Getwd failed: %s", err))
+		panic(fmt.Sprintf("failed: %s", err))
 	}
 
-	fmt.Println("Starting server on", wd)
-	panic(http.ListenAndServe(":8080", http.FileServer(http.Dir(wd))))
+	fmt.Println("Starting server on", here)
+	fmt.Println("Open http://localhost:8080")
+	panic(http.ListenAndServe(":8080", http.FileServer(http.Dir(here))))
 }
