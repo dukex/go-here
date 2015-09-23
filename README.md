@@ -3,6 +3,9 @@ go-here
 
 Up a webserver on your current directory
 
+## Donate to 1P8ccYhVt4ByLahuVXiCY6U185gmYA8Rqf
+
+
 ### USAGE
 
 ```  bash
